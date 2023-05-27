@@ -1,0 +1,235 @@
+body{
+    background-size: cover;
+}
+
+header{
+ height: 90px;
+ font-size: 18px;
+ font-family: "Crimson Text", "Times New Roman", serif;
+ position: fixed;
+ width: 100%;
+ z-index: 1000;
+ background-color: #dbb1bc;
+}
+
+header.animar{
+    border-bottom: 4px solid wheat;
+    transition: 0.7s ease;
+    background-color: #89daff;
+}
+
+a{
+    color: inherit;
+}
+
+nav img{
+    max-height: 70px;
+    margin: 10px;
+}
+
+footer{
+    background-color: #89daff;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    max-height: 70px;
+    margin: 10px
+}
+
+#menu-principal{
+ list-style-type: none;
+ float: right;
+ margin-right: 15px;
+ }
+
+.btn-menu{
+    border: none;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 50px;
+    background-color: transparent;
+ }
+
+.btn-menu a{
+    display: inline-block;
+    height: 120%;
+    width: 120%;
+    border-radius: 20px;
+ }
+
+.btn-menu a:hover{ 
+    background-color: #dbb1bc;
+    color: #89daff;
+    transition: 0.6s ease;
+}
+
+.btn-menu a:active{
+    filter: brightness(90%);
+}
+
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    padding-top: 8vh;
+    background-color: #dbb1;
+}
+
+.home-text{
+    font-family: 'Crimson Text', serif;
+    position: absolute;
+    left: 10vh;
+    top: 35vh;
+    width: 45%;
+    color: white;
+}
+
+.home-text h1{
+    font-size: 6em;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px black;
+}
+
+.home-text p{
+    font-size: 3rem;
+    line-height: 130%;
+}
+
+.home-text span{
+    color: #eff83f;
+}
+
+.home-text a{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 50px;
+    background-color: #dbb1bc;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.home-text a:hover{
+    transform: scale(1.1);
+    transition: .4s ease;
+}
+
+.home-text a:active{
+    transform: scale(0.9);
+    transition: .4s ease;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+.slider img {
+    filter: brightness(50%);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active{
+    opacity: 1;
+}
+
+.slider-nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5vh;
+}
+
+.slider-button{
+    margin: 10px 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-button.active {
+    width: 40px;
+    background-color: #dbb1bc;
+    transition: 1s ease;
+  }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/moroccan-flower-dark.webp);
+    display: flex;
+    align-items: center;
+}
+
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.card{
+    background: url(/assets/moroccan-flower.png);
+    width: 15vw !important;
+    height: 20vw;
+    border-radius: 30px 20px 30px 40px;
+    padding: 32px 46px;
+    margin-right: -7rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.lista-produtos{
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 50vh;
+}
+
+.img-main img{
+    position: relative;
+    float: left;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.lista-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 13vw !important;
+}
+
+.lista-img img{
+    margin: 0 15px;
+    border-radius: 20px;
+}
+
+.lista-img img:nth-child(1){
+    margin-bottom: 20px;
+}
+
+.redes{
+    position: relative;
+    float: right;
+    margin-right: 30px;
+}
+.redes img{
+    height: 40px;
+}
