@@ -27,11 +27,11 @@ header{
  width: 100%;
  z-index: 1000;
  background-color: #dbb1bc;
+ transition: background 0.7s ease;
 }
 
 header.animar{
     border-bottom: 4px solid wheat;
-    transition: 0.7s ease;
     background-color: #89daff;
 }
 
