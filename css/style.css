@@ -20,11 +20,10 @@ body::-webkit-scrollbar-thumb {
 
 
 header{
- height: 90px;
- font-size: 18px;
+ height: 10vh;
  font-family: "Crimson Text", "Times New Roman", serif;
  position: fixed;
- width: 100%;
+ width: 100vw;
  z-index: 1000;
  background-color: #dbb1bc;
  transition: background 0.7s ease;
@@ -35,13 +34,13 @@ header.animar{
     background-color: #89daff;
 }
 
-a{
-    color: inherit;
+nav{
+    height: 100%;
 }
 
 nav img{
-    max-height: 70px;
-    margin: 10px;
+    max-height: 75%;
+    margin: 0.5rem;
 }
 
 footer{
@@ -93,7 +92,7 @@ footer img{
 
 .home{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     padding-top: 8vh;
     background-color: #dbb1;
 }
@@ -108,7 +107,7 @@ footer img{
 }
 
 .home-text h1{
-    font-size: 6em;
+    font-size: 4.5rem;
     letter-spacing: 10px;
     text-shadow: 4px 4px black;
 }
@@ -143,26 +142,12 @@ footer img{
     transition: .4s ease;
 }
 
-.slider {
-    width: 100%;
+.slider{
+    background-image: url(/assets/img-main-1.jpg);
+    background-size: cover;
     height: 100%;
-    position: relative;
-    overflow: hidden;
+    transition: background 0.5s linear;
   }
-
-.slider img {
-    filter: brightness(50%);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.slider img.active{
-    opacity: 1;
-}
 
 .slider-nav{
     display: flex;
@@ -248,4 +233,16 @@ footer img{
 }
 .redes img{
     height: 40px;
+}
+
+@media (max-width: 600px) {
+    #menu-principal{
+        display: none;
+    }
+    .produtos{
+        display: none;
+    }
+    .home{
+        height: 30vh;
+    }
 }

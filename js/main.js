@@ -10,7 +10,6 @@ window.addEventListener('scroll', function() {
 });
 
 const slider = document.querySelector('.slider');
-const images = document.querySelectorAll('.slider img');
 const navButtons = document.querySelectorAll('.slider-button');
 let currentIndex = 0;
 
@@ -25,17 +24,14 @@ navButtons.forEach((button, index) => {
 
 function startSlider() {
   setInterval(() => {
-    currentIndex++;
-    if (currentIndex === images.length) {
-      currentIndex = 0;
+    if(currentIndex==2){
+      currentIndex=-1;
     }
     showImage();
-  }, 6000);
+  }, 2000);
 }
 
 function showImage() {
-  images.forEach(img => img.classList.remove('active'));
-  images[currentIndex].classList.add('active');
-  navButtons.forEach(button => button.classList.remove('active'));
-  navButtons[currentIndex].classList.add('active');
+  currentIndex++;
+  slider.style.backgroundImage = `url(/assets/img-main-${currentIndex+1}.jpg)`
 }
