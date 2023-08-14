@@ -249,11 +249,14 @@ footer img{
     .home{
         height: 70vh;
     }
+    .home-text{
+        top: 12vh;
+    }
     .home-text h1{
         letter-spacing: 5px;
     }
     .home-text h1, .home-text p{
-        font-size: 120%;
+        font-size: 2.2rem;
     }
     .home-text a{
         font-size: 0.8rem;
