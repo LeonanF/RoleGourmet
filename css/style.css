@@ -255,9 +255,12 @@ footer img{
     .home-text h1, .home-text p{
         font-size: 120%;
     }
-    .home-btn{
-        transform: scale(0.5);
-        position: relative;
-        right: 12vw;
+    .home-text a{
+        font-size: 1rem;
+        display: flex;
+        height: 2rem;
+        width: 10rem;
+        justify-content: center;
+        align-items: center;
     }
 }
