@@ -256,10 +256,10 @@ footer img{
         font-size: 120%;
     }
     .home-text a{
-        font-size: 1rem;
+        font-size: 0.8rem;
         display: flex;
         height: 2rem;
-        width: 10rem;
+        width: fit-content;
         justify-content: center;
         align-items: center;
     }
