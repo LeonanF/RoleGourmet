@@ -185,7 +185,7 @@ footer img{
 
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(/assets/moroccan-flower-dark.webp);
     display: flex;
     align-items: center;
@@ -211,14 +211,14 @@ footer img{
 
 .lista-produtos{
     display: flex;
-    width: 50%;
     align-items: center;
+    justify-content: center;
 }
 
 .img-main img{
     position: relative;
     float: left;
-    height: 50vh;
+    width: 50vh;
     border-radius: 20px;
 }
 
@@ -226,16 +226,16 @@ footer img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 15vw !important;
 }
 
 .lista-img img{
-    margin: 0 15px;
+    max-width: 10vw;
+    margin: 0 1rem;
     border-radius: 20px;
 }
 
 .lista-img img:nth-child(1){
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .redes{
@@ -251,8 +251,16 @@ footer img{
     #menu-principal{
         display: none;
     }
-    .produtos{
+    .card{
         display: none;
+    }
+    .lista-produtos{
+        flex-direction: column;
+        margin: 2rem;
+        gap: 1rem;
+    }
+    .lista-img img, .img-main img{
+        max-width: 30vw;
     }
     .home{
         height: 70vh;
