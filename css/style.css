@@ -260,7 +260,7 @@ footer img{
         gap: 1rem;
     }
     .lista-img img, .img-main img{
-        max-width: 30vw;
+        max-width: 45vw;
     }
     .home{
         height: 70vh;
